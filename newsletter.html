@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  NEWSLETTER FORM — CONNECTED 2026-10-29 via Netlify Forms (form name "blitz-signup").
+  NEWSLETTER FORM — MailerLite embedded form "BNC Blitz — Website" (swapped 2026-10-30; FormSubmit was the interim backend 2026-10-30).
   Submits POST to Netlify, which stores the email (dashboard -> Forms) and redirects
   to /thanks.html. Export submissions to MailerLite when that account is created.
   Do not re-add a JS submit intercept in app.js — that silently discarded signups.
@@ -63,11 +63,8 @@
   <div class="newsletter" id="signup" style="max-width:760px;margin-left:auto;margin-right:auto">
     <h2>Join The BNC Blitz — free</h2>
     <p>Be the most informed person in your group chat by 8 AM.</p>
-    <!-- TODO: replace this action with the email provider's form URL (see comment at top of file). -->
-    <form class="signup-form" method="POST" action="https://formsubmit.co/billsnewsconsolidated@gmail.com"><input type="hidden" name="_next" value="https://billsnewsconsolidated.com/thanks.html"><input type="hidden" name="_subject" value="New BNC Blitz signup"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none">
-      <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
-      <button type="submit">SIGN ME UP — FREE</button>
-    </form>
+    <!-- MailerLite embedded form (BNC Blitz — Website) -->
+    <div class="ml-embedded" data-form="TJG0Wm"></div>
     <div class="fineprint">One email each morning. No spam, no selling your address, unsubscribe anytime.</div>
   </div>
 
@@ -113,11 +110,8 @@
   <div class="newsletter" style="max-width:760px;margin-left:auto;margin-right:auto">
     <h2>Still reading? Just sign up.</h2>
     <p>Free forever. Unsubscribe in one click if we're wrong about being worth it. (We're not.)</p>
-    <!-- TODO: replace this action with the email provider's form URL (see comment at top of file). -->
-    <form class="signup-form" method="POST" action="https://formsubmit.co/billsnewsconsolidated@gmail.com"><input type="hidden" name="_next" value="https://billsnewsconsolidated.com/thanks.html"><input type="hidden" name="_subject" value="New BNC Blitz signup"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none">
-      <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
-      <button type="submit">SIGN ME UP — FREE</button>
-    </form>
+    <!-- MailerLite embedded form (BNC Blitz — Website) -->
+    <div class="ml-embedded" data-form="TJG0Wm"></div>
     <div class="fineprint">One email each morning. No spam, unsubscribe anytime.</div>
   </div>
 </div>
@@ -131,6 +125,13 @@
 </footer>
 
 <script src="app.js"></script>
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2756523');
+</script>
+<!-- End MailerLite Universal -->
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "80f37a665b0d47e1b69bcba986157385"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
