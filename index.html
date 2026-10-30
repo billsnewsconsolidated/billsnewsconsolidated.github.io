@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+  NEWSLETTER FORM — CONNECTED 2026-10-29 via Netlify Forms (form name "blitz-signup").
+  Submits POST to Netlify, which stores the email (dashboard -> Forms) and redirects
+  to /thanks.html. Export submissions to MailerLite when that account is created.
+  Do not re-add a JS submit intercept in app.js — that silently discarded signups.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bills News Consolidated — Buffalo Bills News, Film, Culture &amp; Comedy</title>
+<meta name="description" content="Buffalo Bills news with personalities — daily articles from five writers: news, film breakdowns, fan culture, comedy and The Card (matchup trading), plus The BNC Blitz newsletter.">
+<link rel="alternate" type="application/rss+xml" title="Bills News Consolidated RSS" href="feed.xml">
+<meta property="og:site_name" content="Bills News Consolidated">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bills News Consolidated — Buffalo Bills News, Film, Culture &amp; Comedy">
+<meta property="og:description" content="Buffalo Bills news with personalities — daily articles from five writers: news, film breakdowns, fan culture, comedy and The Card (matchup trading), plus The BNC Blitz newsletter.">
+<meta property="og:image" content="https://billsnewsconsolidated.com/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://billsnewsconsolidated.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bills News Consolidated — Buffalo Bills News, Film, Culture &amp; Comedy">
+<meta name="twitter:description" content="Buffalo Bills news with personalities — daily articles from five writers: news, film breakdowns, fan culture, comedy and The Card (matchup trading), plus The BNC Blitz newsletter.">
+<meta name="twitter:image" content="https://billsnewsconsolidated.com/images/og-default.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div>
+      <div class="logo"><a href="index.html">BILLS NEWS <span>CONSOLIDATED</span></a></div>
+      <div class="tagline">Buffalo Bills news with personalities — every single day.</div>
+    </div>
+    <a class="newsbtn" href="newsletter.html">📧 GET THE NEWSLETTER</a>
+  </div>
+  <nav><div class="navwrap">
+    <a href="index.html?desk=news">NEWS</a>
+    <a href="index.html?desk=film-room">FILM ROOM</a>
+    <a href="index.html?desk=culture-desk">CULTURE DESK</a>
+    <a href="index.html?desk=the-tailgate">THE TAILGATE</a>
+    <a href="index.html?desk=the-card">THE CARD</a>
+    <a href="index.html#videos">VIDEOS</a>
+    <a href="index.html?desk=daily-links">DAILY LINKS</a>
+    <a href="gear-guide.html">GEAR GUIDE</a>
+    <a href="team.html">TEAM</a>
+    <a href="newsletter.html">NEWSLETTER</a>
+  </div></nav>
+</header>
+
+<div class="wrap">
+  <div class="adslot leaderboard">Ad — Leaderboard 728×90 (AdSense / Mediavine Journey unit goes here)</div>
+
+  <!-- HERO (rendered from articles.json by app.js) -->
+  <div class="hero">
+    <article class="hero-main" id="hero-main">
+      <div class="kicker">The Latest</div>
+      <h1>Loading the latest story…</h1>
+    </article>
+    <div class="hero-side" id="hero-side"></div>
+  </div>
+
+  <!-- LATEST ARTICLES -->
+  <h2 class="section" id="latest-heading">Latest from the writers</h2><div class="rule"></div>
+  <p class="filter-note" id="filter-note"></p>
+  <div class="grid" id="latest-grid"></div>
+
+  <div class="adslot inarticle-ad">Ad — In-Feed Slot (AdSense unit goes here)</div>
+
+  <!-- WRITERS -->
+  <h2 class="section">Meet the team</h2><div class="rule"></div>
+  <div class="writers">
+    <div class="writer">
+      <div class="avatar"><img src="images/matt-template.webp" alt="Matt Manzella"></div>
+      <h3>Matt Manzella</h3><div class="beat">Owner · News · The Owner's Take</div>
+      <p>Runs the whole operation. Daily links, breaking takes, and the final word on what Bills news actually means.</p>
+      <div class="filed"><a href="team.html">Full roster →</a></div>
+    </div>
+    <div class="writer">
+      <div class="avatar"><img src="images/ally.webp" alt="Ally Sullivan"></div>
+      <h3>Ally Sullivan</h3><div class="beat">Reporter · Culture Desk</div>
+      <p>The site's reporter — player features and locker-room stories, reported properly: names, quotes, context.</p>
+      <div class="filed"><a href="team.html">Full roster →</a></div>
+    </div>
+    <div class="writer">
+      <div class="avatar"><img src="images/dre.webp" alt="Dre"></div>
+      <h3>Dre Washington</h3><div class="beat">Film Room</div>
+      <p>Played college ball, now breaks down film. If a stat matters, he'll show you the play that proves it.</p>
+      <div class="filed"><a href="team.html">Full roster →</a></div>
+    </div>
+    <div class="writer">
+      <div class="avatar"><img src="images/tailgate.webp" alt="The Tailgate"></div>
+      <h3>Tommy Kowalski</h3><div class="beat">The Tailgate · Comedy</div>
+      <p>Power rankings, rival roasting, and the post your group chat will be quoting by noon. Facts checked, feelings notgs not spared.</p>
+      <div class="filed"><a href="team.html">Full roster →</a></div>
+    </div>
+    <div class="writer">
+      <div class="avatar"><img src="images/vince.webp" alt="Vince Marino"></div>
+      <h3>Vince Marino</h3><div class="beat">The Card · Presented by Kalshi</div>
+      <p>The matchup gambler. PFF grades, real stats, and Kalshi prices — every pick logged in public, win or lose. No locks, ever.</p>
+      <div class="filed"><a href="team.html">Full roster →</a></div>
+    </div>
+  </div>
+
+  <!-- VIDEOS -->
+  <h2 class="section" id="videos">From the YouTube channel</h2><div class="rule"></div>
+  <div class="videos">
+    <div class="videocard">
+      <iframe src="https://www.youtube-nocookie.com/embed/teWHBjEutmU" title="Most viewed Bills News Consolidated video" allowfullscreen loading="lazy"></iframe>
+      <h3>Our most-watched video — 119K views</h3>
+    </div>
+    <div class="videocard">
+      <iframe src="https://www.youtube-nocookie.com/embed/UNANQ-eEcbE" title="Inside the new stadium build — Bills News Consolidated" allowfullscreen loading="lazy"></iframe>
+      <h3>Inside the new stadium build</h3>
+    </div>
+  </div>
+
+  <!-- GEAR GUIDE -->
+  <h2 class="section">Bills Mafia Gear Guide</h2><div class="rule"></div>
+  <div class="grid" style="grid-template-columns:1fr">
+    <a class="card" href="gear-guide.html">
+      <div class="kicker">Gear Guide</div>
+      <h3>The gear that survives a Buffalo season →</h3>
+      <p>Tailgate essentials, cold-weather survival for the upper deck, and the watch-party setup — our crew's editorial picks, honestly labeled, plus Bills tickets with code BNC.</p>
+    </a>
+  </div>
+
+  <!-- PARTNERS -->
+  <div class="partners">
+    <span class="plabel">Bills Country Partners</span>
+    <span class="pname">YOUR BUSINESS HERE</span>
+    <span class="pname">·</span>
+    <a class="pname" href="newsletter.html">ADVERTISE WITH BNC →</a>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter" id="newsletter">
+    <h2>The BNC Blitz — free, every morning</h2>
+    <p>The day's Bills news, one stat that matters, and one take you'll argue about. Plus ticket &amp; merch giveaways for subscribers only.</p>
+    <!-- TODO: replace this action with the email provider's form URL (see comment at top of file). -->
+    <form class="signup-form" method="POST" action="https://formsubmit.co/billsnewsconsolidated@gmail.com"><input type="hidden" name="_next" value="https://billsnewsconsolidated.com/thanks.html"><input type="hidden" name="_subject" value="New BNC Blitz signup"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none">
+      <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+      <button type="submit">SIGN ME UP — FREE</button>
+    </form>
+    <div class="fineprint">One email each morning. No spam, unsubscribe anytime.</div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Bills News Consolidated</div>
+    <div><a href="team.html">Writers</a> · <a href="gear-guide.html">Gear Guide</a> · <a href="newsletter.html">Newsletter</a> · <a href="feed.xml">RSS</a></div>
+  </div>
+  <div class="disclaimer">Bills News Consolidated is an independent fan publication and is not affiliated with the Buffalo Bills or the NFL. All team names and marks are property of their respective owners.</div>
+</footer>
+
+<script src="app.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "80f37a665b0d47e1b69bcba986157385"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

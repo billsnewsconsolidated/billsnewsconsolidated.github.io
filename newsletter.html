@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+  NEWSLETTER FORM — CONNECTED 2026-10-29 via Netlify Forms (form name "blitz-signup").
+  Submits POST to Netlify, which stores the email (dashboard -> Forms) and redirects
+  to /thanks.html. Export submissions to MailerLite when that account is created.
+  Do not re-add a JS submit intercept in app.js — that silently discarded signups.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The BNC Blitz — Free Buffalo Bills Newsletter | Bills News Consolidated</title>
+<meta name="description" content="The BNC Blitz: the day's Buffalo Bills news, one stat that matters, and one take you'll argue about — free in your inbox every morning, plus subscriber-only ticket and merch giveaways.">
+<link rel="alternate" type="application/rss+xml" title="Bills News Consolidated RSS" href="feed.xml">
+<meta property="og:site_name" content="Bills News Consolidated">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The BNC Blitz — Free Buffalo Bills Newsletter | Bills News Consolidated">
+<meta property="og:description" content="The BNC Blitz: the day&#x27;s Buffalo Bills news, one stat that matters, and one take you&#x27;ll argue about — free in your inbox every morning, plus subscriber-only ticket and merch giveaways.">
+<meta property="og:image" content="https://billsnewsconsolidated.com/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://billsnewsconsolidated.com/newsletter.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The BNC Blitz — Free Buffalo Bills Newsletter | Bills News Consolidated">
+<meta name="twitter:description" content="The BNC Blitz: the day&#x27;s Buffalo Bills news, one stat that matters, and one take you&#x27;ll argue about — free in your inbox every morning, plus subscriber-only ticket and merch giveaways.">
+<meta name="twitter:image" content="https://billsnewsconsolidated.com/images/og-default.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div>
+      <div class="logo"><a href="index.html">BILLS NEWS <span>CONSOLIDATED</span></a></div>
+      <div class="tagline">Buffalo Bills news with personalities — every single day.</div>
+    </div>
+    <a class="newsbtn" href="#signup">📧 GET THE NEWSLETTER</a>
+  </div>
+  <nav><div class="navwrap">
+    <a href="index.html?desk=news">NEWS</a>
+    <a href="index.html?desk=film-room">FILM ROOM</a>
+    <a href="index.html?desk=culture-desk">CULTURE DESK</a>
+    <a href="index.html?desk=the-tailgate">THE TAILGATE</a>
+    <a href="index.html#videos">VIDEOS</a>
+    <a href="index.html?desk=daily-links">DAILY LINKS</a>
+    <a href="gear-guide.html">GEAR GUIDE</a>
+    <a href="team.html">TEAM</a>
+    <a href="newsletter.html">NEWSLETTER</a>
+  </div></nav>
+</header>
+
+<div class="wrap">
+  <div style="text-align:center;max-width:760px;margin:10px auto 0">
+    <div class="kicker">The Newsletter</div>
+    <h1 style="font-size:38px;line-height:1.15;margin:10px 0">The BNC Blitz</h1>
+    <p class="dek">The day's Bills news, one stat that matters, and one take you'll argue about — in your inbox before your coffee's done. Free. Every morning. Written by all four of our writers.</p>
+  </div>
+
+  <div class="newsletter" id="signup" style="max-width:760px;margin-left:auto;margin-right:auto">
+    <h2>Join The BNC Blitz — free</h2>
+    <p>Be the most informed person in your group chat by 8 AM.</p>
+    <!-- TODO: replace this action with the email provider's form URL (see comment at top of file). -->
+    <form class="signup-form" method="POST" action="https://formsubmit.co/billsnewsconsolidated@gmail.com"><input type="hidden" name="_next" value="https://billsnewsconsolidated.com/thanks.html"><input type="hidden" name="_subject" value="New BNC Blitz signup"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none">
+      <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+      <button type="submit">SIGN ME UP — FREE</button>
+    </form>
+    <div class="fineprint">One email each morning. No spam, no selling your address, unsubscribe anytime.</div>
+  </div>
+
+  <h2 class="section">What subscribers get</h2><div class="rule"></div>
+  <div class="blitz-perks">
+    <div class="perk">
+      <h3>📰 The Morning Roundup</h3>
+      <p>Every headline that matters, in the order you'll argue about it — injury news, roster moves, and what it all means for Sunday. Matt's Daily Links, delivered instead of hunted down.</p>
+    </div>
+    <div class="perk">
+      <h3>📊 One Stat That Matters</h3>
+      <p>Erin's Film Room, distilled: a single number each morning that changes how you'll watch the next game — and the play that proves it isn't a mirage.</p>
+    </div>
+    <div class="perk">
+      <h3>🎁 Subscriber-Only Giveaways</h3>
+      <p>Bills tickets and merch giveaways that are only open to this list. Entry is automatic for subscribers — when we give something away, you're already in. No forms, no hoops.</p>
+    </div>
+    <div class="perk">
+      <h3>🎭 All Four Voices</h3>
+      <p>News from Matt, film from Erin, culture from Dre, and The Tailgate's comedy — the best of all four desks, including the columns everyone will be quoting by lunch.</p>
+    </div>
+    <div class="perk">
+      <h3>🎥 Video, First</h3>
+      <p>New Bills News Consolidated YouTube videos land in the Blitz before they trend anywhere else — watch over breakfast, argue all day.</p>
+    </div>
+    <div class="perk">
+      <h3>🏈 Game-Day Editions</h3>
+      <p>On game days: a morning preview edition and the open-thread invite. Score predictions, the one matchup that decides it, and where to watch with Bills Mafia.</p>
+    </div>
+  </div>
+
+  <div class="sample">
+    <h3>A taste of the Blitz</h3>
+    <ul>
+      <li><b>Top story:</b> the one thing everyone's talking about, in 150 words or less.</li>
+      <li><b>The stat:</b> one number, one play, zero fluff.</li>
+      <li><b>The take:</b> one opinion you'll either love or screenshot to argue with.</li>
+      <li><b>Around the AFC East:</b> what our rivals did, briefly and unsympathetically.</li>
+      <li><b>Today on BNC:</b> the articles and video you'll want before noon.</li>
+    </ul>
+  </div>
+
+  <div class="newsletter" style="max-width:760px;margin-left:auto;margin-right:auto">
+    <h2>Still reading? Just sign up.</h2>
+    <p>Free forever. Unsubscribe in one click if we're wrong about being worth it. (We're not.)</p>
+    <!-- TODO: replace this action with the email provider's form URL (see comment at top of file). -->
+    <form class="signup-form" method="POST" action="https://formsubmit.co/billsnewsconsolidated@gmail.com"><input type="hidden" name="_next" value="https://billsnewsconsolidated.com/thanks.html"><input type="hidden" name="_subject" value="New BNC Blitz signup"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none">
+      <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+      <button type="submit">SIGN ME UP — FREE</button>
+    </form>
+    <div class="fineprint">One email each morning. No spam, unsubscribe anytime.</div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Bills News Consolidated</div>
+    <div><a href="index.html">Home</a> · <a href="gear-guide.html">Gear Guide</a> · <a href="team.html">Writers</a> · <a href="feed.xml">RSS</a></div>
+  </div>
+  <div class="disclaimer">Bills News Consolidated is an independent fan publication and is not affiliated with the Buffalo Bills or the NFL. All team names and marks are property of their respective owners.</div>
+</footer>
+
+<script src="app.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "80f37a665b0d47e1b69bcba986157385"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
