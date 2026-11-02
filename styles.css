@@ -170,3 +170,13 @@ footer .disclaimer{max-width:1180px;margin:12px auto 0;padding:0 20px;opacity:.7
 figure.hero-fig{margin:18px 0 8px}
 figure.hero-fig img{display:block;width:100%;height:auto}
 .img-credit{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--gray);margin-top:6px;line-height:1.45}
+
+/* --- BNC Blitz soft gate (2026-11-02) --- */
+.gate-wrap{position:relative}
+.gate-tail{max-height:230px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,#000 25%,transparent 96%);mask-image:linear-gradient(to bottom,#000 25%,transparent 96%)}
+.gate-tail.open{max-height:none;-webkit-mask-image:none;mask-image:none}
+.gate-cta{position:relative;z-index:2;margin-top:-64px;background:#002266;border-left:5px solid #C60C30;color:#fff;padding:20px 22px;font-family:Arial,Helvetica,sans-serif}
+.gate-cta .gate-title{font-weight:bold;font-size:19px;letter-spacing:.3px}
+.gate-cta p{font-size:14.5px;color:#dbe4f5;margin:6px 0 14px;line-height:1.5}
+.gate-cta .gate-join{background:#C60C30;color:#fff;border:0;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:15px;padding:12px 26px;border-radius:4px;cursor:pointer}
+.gate-cta .gate-skip{background:none;border:0;color:#aebfe0;font-family:Arial,Helvetica,sans-serif;font-size:13.5px;text-decoration:underline;cursor:pointer;margin-left:14px;padding:6px}
