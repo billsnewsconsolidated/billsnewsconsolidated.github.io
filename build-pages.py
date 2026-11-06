@@ -86,7 +86,7 @@ PAGE = """<!DOCTYPE html>
 </header>
 
 <div class="wrap article-shell">
-  <div class="adslot leaderboard" style="background:#00338d;border:1px solid #00338d"><a href="https://kalshi.com/r/BNC" target="_blank" rel="sponsored noopener" style="color:#fff;text-decoration:none;font-weight:800;letter-spacing:.02em">KALSHI — Get a FREE $55 when you trade $25 →</a><div style="color:#cfe0ff;font-size:12px;font-weight:600;margin-top:2px">Use code BNC · 18+ · Terms apply</div></div>
+  <div class="adslot leaderboard" style="background:#0a0a0a;border:1px solid #0a0a0a;padding:12px 16px"><a href="https://kalshi.com/r/BNC" target="_blank" rel="sponsored noopener" style="display:flex;align-items:center;gap:16px;text-decoration:none;flex-wrap:wrap"><img src="/images/kalshi-logo-green.png" alt="Kalshi" style="height:30px;width:auto;display:block"><span style="color:#fff;font-weight:800;font-size:21px;letter-spacing:.01em;line-height:1.15">Get a FREE $55 when you trade $25</span><span style="color:#09c285;font-weight:800;font-size:15px">Use code BNC →</span><span style="color:#9aa0a6;font-size:11px;font-weight:600">18+ · Terms apply</span></a></div>
 
   <article class="article-body-card">
     <div class="kicker {kicker_class}">{desk_label}</div>
@@ -119,7 +119,7 @@ PAGE = """<!DOCTYPE html>
     <div class="fineprint">One email each morning. No spam, unsubscribe anytime.</div>
   </div>
 
-  <div class="adslot inarticle-ad" style="background:#00338d;border:1px solid #00338d"><a href="https://kalshi.com/r/BNC" target="_blank" rel="sponsored noopener" style="color:#fff;text-decoration:none;font-weight:800;letter-spacing:.02em">KALSHI — Get a FREE $55 when you trade $25 →</a><div style="color:#cfe0ff;font-size:12px;font-weight:600;margin-top:2px">Use code BNC · 18+ · Terms apply</div></div>
+  <div class="adslot inarticle-ad" style="background:#0a0a0a;border:1px solid #0a0a0a;padding:16px;text-align:center"><a href="https://kalshi.com/r/BNC" target="_blank" rel="sponsored noopener" style="text-decoration:none;display:block"><img src="/images/kalshi-logo-green.png" alt="Kalshi" style="height:36px;width:auto;display:block;margin:0 auto 8px"><span style="color:#fff;font-weight:800;font-size:24px;letter-spacing:.01em;line-height:1.2;display:block">Get a FREE $55 when you trade $25</span><span style="color:#09c285;font-weight:800;font-size:16px;display:block;margin-top:4px">Use code BNC →</span><span style="color:#9aa0a6;font-size:11px;font-weight:600;display:block;margin-top:6px">18+ · Terms apply</span></a></div>
 
   <h2 class="section">Keep reading</h2><div class="rule"></div>
   <div class="grid related">
@@ -192,7 +192,7 @@ def render_article(a, articles):
             paras.append('        <div class="gate-tail" id="gateTail">')
         paras.append(ph)
         if i == 1:
-            paras.append('      <div class="adslot inarticle-ad" style="background:#00338d;border:1px solid #00338d"><a href="https://kalshi.com/r/BNC" target="_blank" rel="sponsored noopener" style="color:#fff;text-decoration:none;font-weight:800;letter-spacing:.02em">KALSHI — Get a FREE $55 when you trade $25 →</a><div style="color:#cfe0ff;font-size:12px;font-weight:600;margin-top:2px">Use code BNC · 18+ · Terms apply</div></div>')
+            paras.append('      <div class="adslot inarticle-ad" style="background:#0a0a0a;border:1px solid #0a0a0a;padding:16px;text-align:center"><a href="https://kalshi.com/r/BNC" target="_blank" rel="sponsored noopener" style="text-decoration:none;display:block"><img src="/images/kalshi-logo-green.png" alt="Kalshi" style="height:36px;width:auto;display:block;margin:0 auto 8px"><span style="color:#fff;font-weight:800;font-size:24px;letter-spacing:.01em;line-height:1.2;display:block">Get a FREE $55 when you trade $25</span><span style="color:#09c285;font-weight:800;font-size:16px;display:block;margin-top:4px">Use code BNC →</span><span style="color:#9aa0a6;font-size:11px;font-weight:600;display:block;margin-top:6px">18+ · Terms apply</span></a></div>')
         if gate_at is not None and i == n_paras - 1:
             paras.append('        </div>')
             paras.append(GATE_CTA)
