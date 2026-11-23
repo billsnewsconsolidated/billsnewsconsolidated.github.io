@@ -180,3 +180,8 @@ figure.hero-fig img{display:block;width:100%;height:auto}
 .gate-cta p{font-size:14.5px;color:#dbe4f5;margin:6px 0 14px;line-height:1.5}
 .gate-cta .gate-join{background:#C60C30;color:#fff;border:0;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:15px;padding:12px 26px;border-radius:4px;cursor:pointer}
 .gate-cta .gate-skip{background:none;border:0;color:#aebfe0;font-family:Arial,Helvetica,sans-serif;font-size:13.5px;text-decoration:underline;cursor:pointer;margin-left:14px;padding:6px}
+/* --- Film Room email-gate test (2026-11-23) --- */
+.gate-tail.fr-tail{display:none;max-height:none;-webkit-mask-image:none;mask-image:none}
+.gate-tail.fr-tail.open{display:block}
+.gate-wrap.fr .gate-cta{margin-top:18px}
+.gate-cta .gate-fine{font-size:12px;color:#aebfe0;margin:10px 0 0}

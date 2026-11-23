@@ -2,12 +2,13 @@
    scroll pop-up + soft gate). Behavior:
    - At 40% scroll, show the MailerLite Blitz pop-up form (q2woz5) once;
      after a showing, stay quiet for 7 days (localStorage timestamp).
-   - The final section of each article renders faded behind a signup card.
-     "Join free" opens the same pop-up and unlocks the ending; "Keep reading"
-     unlocks too and suppresses the gate for 30 days. Joining (clicking any
-     Join button) suppresses both the gate and the pop-up permanently-ish
-     (joined flag). Content is never removed from the HTML — this is a soft
-     gate only, so shares/SEO are unaffected. */
+   - Film Room email-gate TEST (2026-11-23 → 2026-12-07): Film Room articles
+     hide everything past the first ~35% behind a Blitz signup card (no skip
+     button). "Join free" opens the same pop-up and unlocks the article;
+     joining sets the joined flag, which unlocks every Film Room gate for
+     returning readers. All other desks are ungated. Content is never
+     removed from the HTML — this is a soft gate only, so shares/SEO are
+     unaffected. */
 (function () {
   var JOINED = 'bncBlitzJoined';
   var POPUP_AT = 'bncPopupShownAt';
@@ -40,7 +41,11 @@
     unlockGate();
   };
 
-  if (gatePassed()) { unlockGate(); }
+  // Film Room test gate: only an actual join unlocks it for returning
+  // readers (there is no skip pass on that card). Other gates keep the
+  // legacy joined-or-recently-passed behavior.
+  var isFrGate = !!document.querySelector('.gate-wrap.fr');
+  if (isFrGate ? joined() : gatePassed()) { unlockGate(); }
 
   var shown = false;
   function onScroll() {
